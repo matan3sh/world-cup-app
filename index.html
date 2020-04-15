@@ -19,7 +19,16 @@
             World-Cup Teams
         </h1>
     </div>
+
     <div class="container">
+        <div class="form">
+            <input placeholder="Filter By Name" type="text" name="text" oninput="onFilter(this.value)">
+        </div>
+        <div class="clear-button" hidden>
+            <button class="btn btn-dark btn-block" onclick="onFilter('')">Show All</button>
+            <button class="btn btn-light btn-block" onclick="onFilter('#')">Clear</button>
+        </div>
+
         <img class="spinner" src="img/spinner.gif"/>
         <div class="card-wrapper"></div>
     </div>

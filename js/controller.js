@@ -46,6 +46,12 @@ function getTeamInfoHTML(teamInfo) {
             `
 }
 
+function onFilter(text) {
+    console.log(text)
+    setFilter(text)
+    getTeams(renderTeams)
+}
+
 function onOpenModal(teamCode, teamName) {
     $('.modal').css('display', 'block')
     let strHTML = `
